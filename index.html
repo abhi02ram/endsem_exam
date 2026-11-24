@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Application</title>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: linear-gradient(120deg, #2193b0, #6dd5ed);
+      text-align: center;
+      padding: 40px;
+    }
+
+    .container {
+      background: white;
+      max-width: 450px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px #555;
+    }
+
+    .card {
+      background: #eaf7fc;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #087ca7;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <script type="text/babel" data-type="module">
+    import React from 'https://esm.sh/react@18';
+    import { createRoot } from 'https://esm.sh/react-dom@18/client';
+    import App from './App.jsx';
+
+    createRoot(document.getElementById('root')).render(
+      <App />
+    );
+  </script>
+
+</body>
+</html>
